@@ -1,0 +1,361 @@
+/*************** ADD YOUR CUSTOM CSS HERE  ***************/
+
+:root {
+--container-default-padding-right: 12px;
+--container-default-padding-left: 12px;
+--porto-column-spacing: 0px;
+}
+
+/* Fonts and Text Styles and Sizes */
+ html {
+  font-size: 15px;
+} 
+*{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+p {font-size: 1rem;}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .elementor-heading-title, h3.porto-sicon-title, h3.elementor-flip-box__layer__title { font-weight: 600 !important; line-height: 1.3; letter-spacing: 0.2px; }
+h1,.h1,.page-top .page-title{font-size: clamp(3.5rem, 1.3vw + 2.9rem, 3.75rem);}
+h2,.h2{font-size:3rem;}
+h2,.h2{font-size: clamp(2.75rem, 1.3vw + 2.2rem, 3rem);} 
+h3,.h3, h3.elementor-flip-box__layer__title{font-size:2.25rem}
+h3,.h3, h3.elementor-flip-box__layer__title{font-size: clamp(2rem, 1.3vw + 1.4rem, 2.25rem);}
+h4,.h4, h3.porto-sicon-title{font-size:2rem}
+h4,.h4, h3.porto-sicon-title {font-size: clamp(1.75rem, 1.3vw + 1.2rem, 2rem);}
+h5,.h5{font-size:1.5rem}
+h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
+
+/* Fonts and Text Styles and Sizes */
+
+/*Fix Bootstrap */
+
+.row {
+    margin-right: 0px;
+	margin-left: 0px;} 
+
+.row > * {
+    max-width: 100%;
+    padding-right: 0px;
+    padding-left: 0px; 
+	}
+
+.npd-more-filters-desktop .row .row > *{
+	padding-left: 0 ;
+	padding-right:0 ;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .container-fluid, .e-con {
+  padding-right: 0px ;
+  padding-left: 0px ;
+} 
+.container-fluid .vc_section:not(.porto-inner-container), .container-fluid .elementor-top-section, .nd-wrap-breadcrumb, .e-con > .e-con-inner  {
+    padding-right: 12px ;
+    padding-left: 12px ;
+}
+
+.header-row.container, .footer-bottom .container, .page-top .container {
+	padding-right: 12px ;
+    padding-left: 12px ;
+}
+.container-fluid .elementor-top-section.nd-wrap-breadcrumb, .container-fluid .elementor-top-section.nd-wrap-cta, .container-fluid .elementor-top-section {
+    margin-left: -12px;
+    margin-right: -12px; }
+
+/* .container-fluid .elementor-top-section {
+	margin-left: auto;
+    margin-right: auto;
+} */
+.elementor-section > .elementor-column-gap-default {
+  margin-left: 12px;
+	margin-right: 12px; }
+
+/*Fix Bootstrap */
+
+.mobile-menu.accordion-menu .has-sub .arrow {
+    width: 100%;
+    height: 30px;
+    z-index: 55;
+    text-align: right;
+}
+
+.accordion-menu li.menu-item>a {
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.mobile-menu.accordion-menu .has-sub .arrow { width: 100%;height: 30px;z-index: 55;text-align: right; }
+#side-nav-panel .accordion-menu .arrow {
+    right: 10px;
+}
+.py-6 {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+.nd-mb-2r {
+	margin-bottom: 2rem !important;
+}
+
+
+/* fix logo h1 */
+#header .logo {
+    line-height: 0 !important;
+}
+/* fix logo h1 */
+
+/* padding sub menu */
+.mega-menu .popup {
+    padding-top: 35px;
+}
+
+.sticky .mega-menu .popup {
+	padding-top: 24px;
+}
+/* padding sub menu */
+
+/*fr theme options */
+
+/*form*/
+/* .contact-form .form-control::placeholder
+{
+	font-size: 16px;
+  color: #292929;
+}
+.contact-form textarea::placeholder {
+   color: #292929 !important;
+}
+.contact-form .form-control {
+  font-size: 16px;
+  color: #292929;
+}
+
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea, .form-control, select, .porto-wpforms-inline .wpforms-field-large {
+	color: #292929;
+} */
+/*form*/
+
+/* Move reCAPTCHA v3 badge to the left */
+ 
+ .grecaptcha-badge {
+  width: 70px !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  left: 4px !important;
+  z-index: 1030 ;
+}
+
+.grecaptcha-badge:hover {
+  width: 256px !important;
+}
+/* bullets */
+.nd-bullets ul:not(.list)
+{
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.nd-bullets ul li, .nd-bullets ul:not(.list) li {
+    position: relative;
+    line-height: 1.6;
+    list-style: none;
+    margin-bottom: 1.5rem;
+    padding-left: 2.4rem;
+}
+
+.nd-bullets ul:not(.list) li:before {
+    content: "\f7b9";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    color: var( --porto-primary-color ); 
+    border: var( --e-global-color-text ) solid 0px;
+    margin-right: 0.7rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+/*     background-color: var( --e-global-color-primary ); */
+}
+/* bullets */
+
+/* Header */
+
+/* Footer */
+
+/*fr theme options */
+
+/* home hero banner */
+.home-top-banner {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+    z-index: 10;
+}
+.nd-d1 h1 {
+	font-size: 4.5rem;
+	font-weight: 700;
+	line-height: 1.3;
+	text-shadow: 1px 1px 3px rgba(12, 32, 49, 0.4);
+}
+.nd-d1 h1 {
+	font-size: clamp(3.5rem, 5.3vw + 1.2rem, 4.5rem);
+}
+.nd-text-shadow {
+	text-shadow: 1px 1px 3px rgba(12, 32, 49, 0.4);
+}
+
+.nd-mt-n-2 {
+	margin-top: -0.75rem;
+}
+
+.nd-center-parent {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+	position:relative;
+}
+
+
+.nd-center-child {
+  margin: auto;
+}
+
+.nd-cover-hero .nd-center-child {
+  margin: auto;
+	position:absolute;
+	bottom:0;
+}
+
+.nd-cover {
+	height: 80vh;
+    min-height: 600px;
+	height: fit-content;
+}
+
+.nd-cover-hero {
+	height: 80vh;
+    min-height: 600px;
+	position:relative;
+}
+
+
+/* No media query since this is the default in Bootstrap */
+
+
+
+/* Small devices (landscape phones, 576px and up)  */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)  */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+ html {
+  font-size: 16px;
+} 
+
+}
+
+@media (min-width: 992px) and (max-width: 1163px) {
+.elementor-section.elementor-section-boxed > .elementor-container,  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1160px;
+}
+}
+
+/* Extra large devices (large desktops, 1170px and up) */
+@media (min-width: 1170px) {
+
+}
+
+@media (min-width: 1164px) and (max-width: 1727px) {
+.elementor-section.elementor-section-boxed > .elementor-container,  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1640px;
+}
+}
+
+@media (min-width: 1200px) {
+
+body.single-post .img-thumbnail img { max-height: 70vh; object-fit: cover; }
+	
+	 .nd-cover {
+		 min-height: 786px
+			 height: fit-content;
+	 }
+	 .nd-cover-hero {
+		 min-height: 786px
+	 }
+
+}
+
+ @media (min-width: 1400px) {
+	 
+} 
+
+ @media (min-width: 1600px) {
+
+} 
+
+ @media (min-width: 1800px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1680px ;
+  }
+	 .nd-wrap {
+		max-width: 1680px;
+		margin-right: auto !important;
+    margin-left: auto !important;
+	}
+	 
+} 
+
+
+
+@media (max-width: 1169px) {
+	
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 991px) {
+/* 	.px-gutter {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+} */
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px)
+{
+:root {
+    --porto-fluid-spacing: 24px;
+}
+}
+
+@media screen and (max-width:480px){
+	
+
+
+}
+
+@media screen and (max-width:360px){
+	
+}
