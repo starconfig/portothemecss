@@ -282,7 +282,7 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
 
 @media (min-width: 1164px) and (max-width: 1727px) {
 .elementor-section.elementor-section-boxed > .elementor-container,  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1640px;
+    max-width: 1640px; /* Please test it if doesn't work use  max-width: 100% ; */
 }
 }
 
