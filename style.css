@@ -27,7 +27,8 @@ h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
 
 /*Fix Bootstrap */
 
-.row {
+/* Please test it css below 
+/* .row {
     margin-right: 0px;
 	margin-left: 0px;} 
 
@@ -35,7 +36,7 @@ h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
     max-width: 100%;
     padding-right: 0px;
     padding-left: 0px; 
-	}
+	} */
 
 .npd-more-filters-desktop .row .row > *{
 	padding-left: 0 ;
