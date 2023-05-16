@@ -4,6 +4,8 @@
 --container-default-padding-right: 12px;
 --container-default-padding-left: 12px;
 --porto-column-spacing: 0px;
+	 /* fix block builder */
+	 --porto-fluid-spacing: 12px;
 }
 
 /* Fonts and Text Styles and Sizes */
@@ -287,6 +289,15 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
 }
 }
 
+/* new to fix responsivenes nd-wrap */
+@media (min-width: 1728px) and (max-width: 1799px) {
+.elementor-section.elementor-section-boxed > .elementor-container,  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+   max-width: 100%;
+	padding-right: 12px;
+        padding-left: 12px;
+}
+}
+
 @media (min-width: 1200px) {
 
 body.single-post .img-thumbnail img { max-height: 70vh; object-fit: cover; }
@@ -316,7 +327,9 @@ body.single-post .img-thumbnail img { max-height: 70vh; object-fit: cover; }
 	 .nd-wrap {
 		max-width: 1680px;
 		margin-right: auto !important;
-    margin-left: auto !important;
+                margin-left: auto !important;
+		padding-right: 12px;
+                padding-left: 12px;
 	}
 	 
 } 
@@ -352,7 +365,7 @@ body.single-post .img-thumbnail img { max-height: 70vh; object-fit: cover; }
 @media screen and (max-width: 575px)
 {
 :root {
-    --porto-fluid-spacing: 24px;
+    --porto-fluid-spacing: 12px;
 }
 }
 
