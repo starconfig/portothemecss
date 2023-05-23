@@ -1,5 +1,3 @@
-/*************** ADD YOUR CUSTOM CSS HERE  ***************/
-
 :root {
 --container-default-padding-right: 12px;
 --container-default-padding-left: 12px;
@@ -40,10 +38,10 @@ h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
     padding-left: 0px; 
 	} */
 
-/* .npd-more-filters-desktop .row .row > *{
+.npd-more-filters-desktop .row .row > *{
 	padding-left: 0 ;
 	padding-right:0 ;
-} */
+}
 
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .container-fluid, .e-con {
   padding-right: 0px ;
@@ -54,7 +52,7 @@ h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
     padding-left: 12px ;
 }
 
-.header-row.container, .footer-bottom .container, .page-top .container {
+.header-row.container, .footer-bottom .container, .page-top .container, .header-container.container {
 	padding-right: 12px ;
     padding-left: 12px ;
 }
@@ -62,13 +60,8 @@ h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
     margin-left: -12px;
     margin-right: -12px; }
 
-/* .container-fluid .elementor-top-section {
-	margin-left: auto;
-    margin-right: auto;
-} */
-.elementor-section > .elementor-column-gap-default {
-  margin-left: 12px;
-	margin-right: 12px; }
+
+
 
 /*Fix Bootstrap */
 
@@ -288,6 +281,15 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
     max-width: 1680px; /* Please test it if doesn't work use  max-width: 100% ; or max-width: 1727px;   */
 }
 }
+
+/* new to fix responsivenes nd-wrap */
+/* @media (min-width: 1728px) and (max-width: 1799px) {
+.elementor-section.elementor-section-boxed > .elementor-container,  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+   max-width: 100%;
+	padding-right: 12px;
+        padding-left: 12px;
+}
+} */
 
 @media (min-width: 1200px) {
 
