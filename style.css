@@ -6,7 +6,7 @@
 	 --porto-fluid-spacing: 12px;
 }
 
-/* Fonts and Text Styles and Sizes */
+/* Fonts and Text Styles and Sizes*/
  html {
   font-size: 15px;
 } 
@@ -16,8 +16,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .elementor-heading-title, 
 h1,.h1,.page-top .page-title{font-size: clamp(3.5rem, 1.3vw + 2.9rem, 3.75rem);}
 h2,.h2{font-size:3rem;}
 h2,.h2{font-size: clamp(2.75rem, 1.3vw + 2.2rem, 3rem);} 
-h3,.h3, h3.elementor-flip-box__layer__title{font-size:2.25rem}
-h3,.h3, h3.elementor-flip-box__layer__title{font-size: clamp(2rem, 1.3vw + 1.4rem, 2.25rem);}
+h3,.h3, h3.elementor-flip-box__layer__title {font-size:2.25rem}
+h3,.h3, h3.elementor-flip-box__layer__title {font-size: clamp(2rem, 1.3vw + 1.4rem, 2.25rem);}
 h4,.h4, h3.porto-sicon-title{font-size:2rem}
 h4,.h4, h3.porto-sicon-title {font-size: clamp(1.75rem, 1.3vw + 1.2rem, 2rem);}
 h5,.h5{font-size:1.5rem}
@@ -25,48 +25,114 @@ h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
 
 /* Fonts and Text Styles and Sizes */
 
-/*Fix Bootstrap */
 
-/* Please test it css below 
-/* .row {
-    margin-right: 0px;
-	margin-left: 0px;} 
 
-.row > * {
-    max-width: 100%;
-    padding-right: 0px;
-    padding-left: 0px; 
-	} */
 
-.npd-more-filters-desktop .row .row > *{
-	padding-left: 0 ;
-	padding-right:0 ;
-}
-
-.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .container-fluid, .e-con {
-  padding-right: 0px ;
-  padding-left: 0px ;
-} 
-.container-fluid .vc_section:not(.porto-inner-container), .container-fluid .elementor-top-section, .nd-wrap-breadcrumb, .e-con > .e-con-inner  {
+.container-fluid .vc_section:not(.porto-inner-container)  {
     padding-right: 12px ;
     padding-left: 12px ;
 }
 
-.header-row.container, .footer-bottom .container, .page-top .container, .header-container.container {
+.header-row.container, .footer-bottom .container, .page-top .container {
 	padding-right: 12px ;
     padding-left: 12px ;
 }
-.container-fluid .elementor-top-section.nd-wrap-breadcrumb, .container-fluid .elementor-top-section.nd-wrap-cta, .container-fluid .elementor-top-section {
+.container-fluid .elementor-top-section.nd-wrap-breadcrumb, .container-fluid .elementor-top-section.nd-wrap-cta{
     margin-left: -12px;
     margin-right: -12px; }
 
-/*Fix Bootstrap */
 
+/*Fix Bootstrap */
 .nd-col-half-section {
     width: 100%;
     min-height: 1px;
     position: relative;
-    max-width: 991px;
+max-width: 1163px; 
+}
+
+/* Hero Section */
+.container-fluid .block-parent-fix-bootstrap {
+	margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#hero-video {
+	height: 100vh;
+}
+
+img.dam-content-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+.dam-hero {
+	min-height: 540px;
+	    padding-top: 5rem;
+    padding-bottom: 5rem ;
+}
+/* End Hero Section */
+/*services and hero section */
+.dam-block-service-section h2 {font-size:2.25rem}
+.dam-block-service-section h2 {font-size: clamp(2rem, 1.3vw + 1.4rem, 2.25rem);}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* .service, .dam-hero {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+} */
+
+.service {
+	min-height: 650px;
+}
+.service-hover {
+    -webkit-transition: all 0.5s ease; /* Safari */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease; /* Standard syntax */
+}
+
+.service-hover:hover {
+    background-color: #D6AF0B; /* replace this with your desired color */
+    opacity: 0.9; /* replace this with your desired opacity */
+}
+
+
+/*services section */
+
+.dam-block-feature-section .card {
+	    border: 0px ;
+	
+}
+
+.dam-block-feature-section .icon {
+    font-size: 3rem;
+	padding-bottom: 1rem;
+}
+
+
+
+.header-top .header-contact a, .header-top .custom-html a:not(.btn), #header .header-top .top-links > li.menu-item > a, .header-top .welcome-msg a {
+    color: #39004d;
+}
+.header-top .header-contact a:hover, .header-top .custom-html a:not(.btn):hover, #header .header-top .top-links > li.menu-item.active > a, #header .header-top .top-links > li.menu-item:hover > a, #header .header-top .top-links > li.menu-item > a.active, #header .header-top .top-links > li.menu-item.has-sub:hover > a, .header-top .welcome-msg a:hover {
+    color:  #c481fd;
+}
+
+#header .header-top .header-contact,#header .header-top .nav-top {
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+
+#header .header-main {
+    background-color: #f3e4ff;
 }
 
 .mobile-menu.accordion-menu .has-sub .arrow {
@@ -92,7 +158,9 @@ h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
 .nd-mb-2r {
 	margin-bottom: 2rem !important;
 }
-
+.nd-min-640 {
+    min-height: 640px;
+}
 
 /* fix logo h1 */
 #header .logo {
@@ -160,7 +228,7 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
 }
 
 .nd-bullets ul:not(.list) li:before {
-    content: "\f7b9";
+    content: "\f06c";
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
@@ -266,41 +334,46 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
  html {
   font-size: 16px;
 } 
-
+	
 }
 
 @media (min-width: 992px) and (max-width: 1163px) {
 .elementor-section.elementor-section-boxed > .elementor-container,  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 100%; /* Please test it if doesn't work use  max-width: 100% ; or max-width: 1160px;   */
+    max-width: 100%;
 }
 }
 
-/* Extra large devices (large desktops, 1170px and up) */
-@media (min-width: 1170px) {
-
+/* Extra large devices (large desktops, 1164px and up) */
+@media (min-width: 1164px) {
+.nd-col-half-section {
+    max-width: 50%; 
+}
 }
 
 @media (min-width: 1164px) and (max-width: 1727px) {
 .elementor-section.elementor-section-boxed > .elementor-container,  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1680px; /* Please test it if doesn't work use  max-width: 100% ; or max-width: 1727px;   */
+   max-width: 100%;
 }
 }
 
 /* new to fix responsivenes nd-wrap */
-/* @media (min-width: 1728px) and (max-width: 1799px) {
+@media (min-width: 1728px) and (max-width: 1799px) {
 .elementor-section.elementor-section-boxed > .elementor-container,  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
    max-width: 100%;
 	padding-right: 12px;
         padding-left: 12px;
 }
-} */
+}
+
 
 @media (min-width: 1200px) {
+	
+	
 
 body.single-post .img-thumbnail img { max-height: 70vh; object-fit: cover; }
 	
 	 .nd-cover {
-		 min-height: 786px
+		 min-height: 786px;
 			 height: fit-content;
 	 }
 	 .nd-cover-hero {
@@ -318,9 +391,18 @@ body.single-post .img-thumbnail img { max-height: 70vh; object-fit: cover; }
 } 
 
 @media (min-width: 1680px) and (max-width: 1799px) {
-.nd-col-half-section {
-		 max-width: 840px !important;
-	 }
+	.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1680px ;
+  }
+	
+    .nd-col-half-section {
+        max-width: 50%;
+    }
+	.nd-wrap {
+		max-width: 1656px;
+		margin-right: auto !important;
+        margin-left: auto !important;
+	}
 }
 
  @media (min-width: 1800px) {
@@ -330,23 +412,18 @@ body.single-post .img-thumbnail img { max-height: 70vh; object-fit: cover; }
 	 .nd-wrap {
 		max-width: 1680px;
 		margin-right: auto !important;
-                margin-left: auto !important;
+        margin-left: auto !important;
 		padding-right: 12px;
-                padding-left: 12px;
+        padding-left: 12px;
 	}
 	 
 	 .nd-col-half-section {
-		 max-width: 840px !important;
-	 }
-	 
+        max-width: 840px !important;
+    }
+
 } 
 
 
-@media (max-width: 1799px) {
-/* 	.woocommerce-cart .container-fluid, .woocommerce-checkout .container-fluid {
-	max-width: 1680px;
-	} */
-}
 
 @media (max-width: 1169px) {
 	
@@ -365,12 +442,13 @@ body.single-post .img-thumbnail img { max-height: 70vh; object-fit: cover; }
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
 }
 
 @media screen and (max-width: 575px)
 {
+	/* fix for block builder */
 :root {
     --porto-fluid-spacing: 12px;
 }
