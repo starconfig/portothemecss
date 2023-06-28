@@ -45,9 +45,11 @@ h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
 /*Fix Bootstrap */
 .nd-col-half-section {
     width: 100%;
-    min-height: 1px;
-    position: relative;
-max-width: 1163px; 
+  min-height: 1px;
+  position: relative;
+  max-width: 1163px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 /* Hero Section */
@@ -346,7 +348,7 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
 /* Extra large devices (large desktops, 1164px and up) */
 @media (min-width: 1164px) {
 .nd-col-half-section {
-    max-width: 50%; 
+
 }
 }
 
@@ -396,7 +398,7 @@ body.single-post .img-thumbnail img { max-height: 70vh; object-fit: cover; }
   }
 	
     .nd-col-half-section {
-        max-width: 50%;
+        max-width: 840px;
     }
 	.nd-wrap {
 		max-width: 1656px;
