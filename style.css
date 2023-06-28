@@ -26,8 +26,6 @@ h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
 /* Fonts and Text Styles and Sizes */
 
 
-
-
 .container-fluid .vc_section:not(.porto-inner-container)  {
     padding-right: 12px ;
     padding-left: 12px ;
@@ -48,8 +46,6 @@ h6,.h6, h2.pp-tiled-post-title {font-size:1.25rem; }
   min-height: 1px;
   position: relative;
   max-width: 1163px;
-	margin-left: auto;
-    margin-right: auto;
 }
 
 /* Hero Section */
@@ -425,7 +421,12 @@ body.single-post .img-thumbnail img { max-height: 70vh; object-fit: cover; }
 
 } 
 
-
+@media (max-width: 1200px) {
+	.nd-col-half-section {
+	margin-left: auto;
+    margin-right: auto;
+}
+}
 
 @media (max-width: 1169px) {
 	
