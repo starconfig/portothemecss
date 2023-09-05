@@ -184,28 +184,32 @@ letter-spacing:normal
 background-color:#f3e4ff
 }
 
+/* Sub Menu Link Hover */
+
 .mobile-menu.accordion-menu .has-sub .arrow {
 width:100%;
 height:30px;
 z-index:55;
-text-align:right
+text-align:right;
 }
 
 .accordion-menu li.menu-item>a {
 line-height:32px;
-font-weight:600
+font-weight:600;
 }
 
-.mobile-menu.accordion-menu .has-sub .arrow {
+#side-nav-panel .accordion-menu .has-sub .arrow {
 width:100%;
-height:30px;
+height:53px; /* can be 30px or 32px depends on font sizes or height */
 z-index:55;
-text-align:right
+text-align:right;
 }
 
 #side-nav-panel .accordion-menu .arrow {
 right:10px
 }
+
+/* Sub Menu Link Hover */
 
 .py-6 {
 padding-top:6rem;
