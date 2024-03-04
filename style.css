@@ -1,4 +1,5 @@
 :root {
+--container-max-width: 1680px;	
 --container-default-padding-right:12px;
 --container-default-padding-left:12px;
 --porto-column-spacing:0;
