@@ -9,6 +9,7 @@
 
 /* Fonts and Text Styles and Sizes*/
 html {
+scroll-behavior: smooth;
 font-size:15px
 }
 
