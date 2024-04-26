@@ -271,41 +271,44 @@ width:256px!important
 }
 
 /* bullets */
-.nd-bullets ul:not(.list) {
-padding-left:0;
-margin:1.5rem 0
+.nd-bullets ul:not(.list), .single-post .post-content ul:not(.list), .faq-content ul:not(.list), .faq ul:not(.list) {
+    padding-left: 0;
+    margin: 1.5rem 0;
+	display: inline-block;
+	font-size: 1.25rem;
 }
 
-.nd-bullets ul li,.nd-bullets ul:not(.list) li {
-position:relative;
-line-height:1.6;
-list-style:none;
-margin-bottom:1.5rem;
-padding-left:2.4rem
+.nd-bullets ul li,
+.nd-bullets ul:not(.list) li, .single-post .post-content ul li, .single-post .post-content ul:not(.list) li, .faq-content ul li, .faq-content ul:not(.list) li, .faq ul:not(.list) li {
+    position: relative;
+    line-height: 1.6;
+    list-style: none;
+    margin-bottom: 1.5rem;
+    padding-left: 3rem;
 }
 
-.nd-bullets ul:not(.list) li:before {
-content:"\f06c";
-font-family:'Font Awesome 5 Free';
-font-weight:900;
--webkit-font-smoothing:antialiased;
-display:inline-block;
-font-style:normal;
-font-variant:normal;
-text-rendering:auto;
-line-height:1;
-border-radius:50%;
-width:1.5rem;
-height:1.5rem;
-text-align:center;
-padding:5px;
-color:var(--porto-primary-color);
-border:var(--e-global-color-text) solid 0;
-margin-right:.7rem;
-position:absolute;
-left:0;
-top:0
-/*     background-color: var( --e-global-color-primary ); */
+.nd-bullets ul:not(.list) li:before, .single-post .post-content ul:not(.list) li:before, .faq-content ul:not(.list) li:before , .faq ul:not(.list) li:before  {
+    content: "\f164";
+    font: var(--fa-font-solid);
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    border-radius: 50%;
+/*     width: 1.5rem;
+    height: 1.5rem; */
+    text-align: center;
+    padding: 5px;
+    color: var(--porto-primary-color);
+    border: var(--porto-primary-color) solid 2px;
+    margin-right: 0.7rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*     background-color: var( --e-global-color-primary ); */
 }
 
 /* bullets */
