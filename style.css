@@ -80,6 +80,16 @@ margin-left:-12px;
 margin-right:-12px
 }
 
+/*fix elementor 10/05/24 */
+.container-fluid .e-parent {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+      }
+      .e-con>.e-con-inner {
+    max-width: 1680px;
+      }
+/*fix elementor 10/05/24 */
 /*Fix Bootstrap */
 .nd-col-half-section {
 width:100%;
